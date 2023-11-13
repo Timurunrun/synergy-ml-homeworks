@@ -1,0 +1,8 @@
+def max_of_numbers(a, b, c=None):
+    if c is None:
+        # If third number is not provided, compare the first two
+        return a if a > b else b
+    else:
+        # If third number is provided, find the maximum among the three
+        max_num = a if a > b else b
+        return max_num if max_num > c else c
