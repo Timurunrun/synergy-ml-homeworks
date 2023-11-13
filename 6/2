@@ -1,0 +1,2 @@
+def register_person(first_name, last_name, middle_name, birth_year):
+    return f"{last_name} {first_name} {middle_name} {birth_year} г.р. зарегистрирован"
