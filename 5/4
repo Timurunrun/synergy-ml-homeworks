@@ -1,0 +1,14 @@
+algebra_students = input()
+geometry_students = input()
+trigonometry_students = input()
+
+algebra_set = set(algebra_students.split())
+geometry_set = set(geometry_students.split())
+trigonometry_set = set(trigonometry_students.split())
+
+students_solved_all = algebra_set & geometry_set & trigonometry_set
+
+if students_solved_all:
+    print(" ".join(sorted(students_solved_all)))
+else:
+    print("Все три задачи никто не решил")
