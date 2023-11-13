@@ -1,0 +1,17 @@
+n = int(input())
+
+cities = []
+for _ in range(n):
+    city = input()
+    cities.append(city)
+
+city_count = {}
+for city in cities:
+    if city in city_count:
+        city_count[city] += 1
+    else:
+        city_count[city] = 1
+
+total_repetitions = sum(count for count in city_count.values() if count > 1)
+
+print(total_repetitions)
