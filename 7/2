@@ -1,0 +1,2 @@
+def find_multiples(numbers):
+    return list(filter(lambda x: x % 19 == 0 or x % 13 == 0, numbers))
