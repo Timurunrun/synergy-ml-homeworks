@@ -1,0 +1,17 @@
+text = input()
+
+capitalize = True
+
+corrected_text = ""
+
+for char in text:
+    if capitalize and char.isalpha():
+        corrected_text += char.upper()
+        capitalize = False
+    else:
+        corrected_text += char
+
+    if char in ".!?":
+        capitalize = True
+
+print(corrected_text)
