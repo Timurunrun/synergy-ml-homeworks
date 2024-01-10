@@ -17,6 +17,6 @@ df = pd.DataFrame({
 })
 
 print(df.head(3))
-print(df.head(-3))
+print(df.tail(3))
 
 df.to_csv('Teenagers')
