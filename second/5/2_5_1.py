@@ -13,6 +13,4 @@ customers = pd.read_csv('Customers.csv', sep=';')
 
 customers = customers.dropna()
 
-customers
-
 customers_group = customers.groupby('Profession')['Income'].mean()
